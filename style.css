@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: #99C825;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.coluna1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.coluna1 h2 {
+  font-size: 54px;
+}
+
+.coluna1 h3 {
+  font-size: 30px;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+
+.coluna1 p {
+  font-size: 16px;
+  color: #B7B7B7;
+  font-weight: 100;
+}
+
+.coluna1 h4 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+button {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #FFF;
+  background: linear-gradient(to right, #C4ED5D, #99C825);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+button img {
+  width: 30px;
+  display: none;
+}
+
+button:hover img {
+  display: block;
+}
+
+button:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coluna1::after {
+  content: '';
+  width: 10px;
+  height: 57%;
+  background: linear-gradient(#C4ED5D, #99C825);
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+
+.coluna2{
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+.coluna2 .tenis{
+  width: 90%;
+
+}
+.color-box{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(#C4ED5D, #99C825);
+  border-radius: 40px 0 0 40px;
+  height: 100%;
+  width: 80%;
+  z-index: -1;
+  transform: translate(160px);
+}
+
+.add-botao img {
+width: 35px;
+margin-bottom: 5px;
+}
+
+.add-botao {
+  text-align: center;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.redes-sociais img {
+  height: 13px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.redes-sociais {
+  text-align: center;
+}
